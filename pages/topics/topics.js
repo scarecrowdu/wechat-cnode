@@ -17,6 +17,7 @@ Page({
     postsList: [],
     hidden: false,
     page: 1,
+    limit: 20,
     tab: 'all'
   },
 
@@ -49,9 +50,10 @@ Page({
   //获取文章列表数据
   getData: function() {
     var that = this;
-    var good = that.data.tab;
+    var tab = that.data.tab;
     var page = that.data.page;
-    var ApiUrl = Api.topics +'?good='+ good +'&page='+ page;
+    var limit = that.data.limit;
+    var ApiUrl = Api.topics +'?tab='+ tab +'&page='+ page +'&limit='+ limit;
 
     that.setData({ hidden: false });
 
