@@ -42,9 +42,10 @@ Page({
 
         setTimeout(function(){
           that.setData({ loading: false });
-          wx.navigateTo({
-            url: '/pages/index/index'
-          })
+          // wx.navigateTo({
+          //   url: '/pages/index/index'
+          // })
+          wx.navigateBack();
         },3000);
 
       }else{
