@@ -30,6 +30,12 @@ Page({
     console.log('下拉刷新', new Date());
   },
 
+  
+  onReachBottom: function () {
+    this.lower();
+    console.log('上拉刷新', new Date());
+  },
+
   // 点击获取对应分类的数据
   onTapTag: function(e) {
     var that = this;

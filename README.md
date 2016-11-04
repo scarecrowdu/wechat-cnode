@@ -27,9 +27,9 @@
 │  ├─common     
 │  ├─detail
 │  ├─index        
-│  │    index.js    # 页面逻辑
-│  │    index.wxml  # 页面渲染层
-│  │    index.wxss  # 页面样式
+│  │    index.js      # 页面逻辑
+│  │    index.wxml    # 页面渲染层
+│  │    index.wxss    # 页面样式
 │  ├─login
 |  ├─logs
 │  └─topics

@@ -1,6 +1,5 @@
 <!-- detail -->
 <page class="page detail">
-
   <view class="detail-post-meta">
     <view class="detail-post-avatar">
       <image class="detail-post-avatar-img" mode="scaleToFill" src="{{ detail.author.avatar_url }}" />
@@ -9,19 +8,15 @@
       <view class="detail-post-author-name">
         <text>{{ detail.author.loginname }}</text>
         <view class="detail-type-item"  wx:if="{{detail.tab === 'good'}}">
-          <!-- <image class="detail-type-item-icon" src="/images/icon/type.png"></image> -->
           <view class="detail-type-item-font">#精华#</view>
         </view>
         <view class="detail-type-item"  wx:if="{{detail.tab === 'share'}}">
-          <!-- <image class="detail-type-item-icon" src="/images/icon/type.png"></image> -->
           <view class="detail-type-item-font">#分享#</view>
         </view>
         <view class="detail-type-item"  wx:if="{{detail.tab === 'ask'}}">
-          <!-- <image class="detail-type-item-icon" src="/images/icon/type.png"></image> -->
           <view class="detail-type-item-font">#问答#</view>
         </view>
         <view class="detail-type-item"  wx:if="{{detail.tab === 'job'}}">
-          <!-- <image class="detail-type-item-icon" src="/images/icon/type.png"></image> -->
           <view class="detail-type-item-font">#招聘#</view>
         </view>
       </view>
@@ -71,7 +66,7 @@
         </view>
       </block>
 
-      <block wx:else>
+      <block wx:if="{{detail.replies.length < 0}}">
         <view class="detail-post-comment-null">
           <image class="imgnull" mode="scaleToFill" src="/images/icon/null.png"></image>
           <text class="textnull">暂无收录评论 </text>
