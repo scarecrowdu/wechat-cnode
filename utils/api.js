@@ -21,7 +21,7 @@ function fetchGet(url, callback) {
   // return callback(null, top250)
   wx.request({
     url: url,
-    header: { 'Content-Type': 'application/json' },
+    header : { 'Content-Type': 'application/json' },
     success (res) {
       callback(null, res.data)
     },
