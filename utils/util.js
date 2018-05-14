@@ -35,6 +35,7 @@ function getDateDiff (dateTimeStamp) {
   var dayC = diffValue / day;
   var hourC = diffValue / hour;
   var minC = diffValue / minute;
+  var result;
   if(yearC >= 1){
     result = parseInt(yearC) + '年以前';
   }else if(monthC >= 1){

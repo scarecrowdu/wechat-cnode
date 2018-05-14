@@ -12,7 +12,7 @@
     "navigationBarBackgroundColor": "#444",
     "navigationBarTitleText": "CNODE 社区",
     "navigationBarTextStyle":"white",
-    "enablePullDownRefresh":"true"
+    "enablePullDownRefresh":true
   },
   "tabBar":{
     "color":"#444",
